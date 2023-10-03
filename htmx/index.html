@@ -1,0 +1,10 @@
+<script src="htmx-1.9.6.min.js"></script>
+<button
+  id='cv-button'
+  hx-get="/htmx/cv.html"
+  hx-trigger="click"
+  hx-target="#cv-button"
+  hx-swap="outerHTML"
+>
+  Load Resume
+</button>
