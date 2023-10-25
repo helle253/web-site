@@ -7,15 +7,15 @@
   <li><a href="https://github.com/helle253">Github</a></li>
   <li><a href="https://notes.hellbhoy.net">Notes</a></li>
 
-  <p> Press this button to see my resume, if you are interested:</p>
-
-  <button
-    id='cv-button'
-    hx-get="/htmx/cv.html"
-    hx-trigger="click"
-    hx-target="#cv-button"
-    hx-swap="outerHTML"
-  >
-    Load Resume
-  </button>
+  <div id='resume-content'>
+    <p> Press this button to see my resume, if you are interested:</p>
+    <button
+      hx-get="/htmx/cv.html"
+      hx-trigger="click"
+      hx-target="#resume-content"
+      hx-swap="outerHTML"
+    >
+      Load Resume
+    </button>
+  </div>
 </body>
