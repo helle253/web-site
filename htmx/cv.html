@@ -1,6 +1,17 @@
-<object
-data="/static/cv.pdf"
-aria-labelledby="My resume"
-type="application/pdf"
-width="800"
-height="500"/>
+<div
+  id='resume-content'
+>
+  <button
+    hx-get="/htmx/load_resume.html"
+    hx-trigger="click"
+    hx-target="#resume-content"
+    hx-swap="outerHTML"
+  >
+    Close Resume
+  </button>
+  <iframe
+    aria-label='Resume'
+    name='Resume'
+    src="https://docs.google.com/document/d/e/2PACX-1vSzEqNYH-xsH7RDkRmn0ZiTXv7I3uLnEReJgYcbmKTTCbEC1FRAUuBeihwCNgSJvULxat7ZyL6w5NAQ/pub?embedded=true"
+  \>
+</div>

@@ -1,9 +1,18 @@
+<head>
+  <script src="htmx-1.9.6.min.js"></script>
+</head>
 <body>
   <p>Hey, I'm Nathan</p>
   <p>I'm a programmer a Blue Bottle Coffee. You can get a hold of me at [firstname]hellbhoy@gmail.com</p>
-
-  <li><a href="/static/cv.pdf">Resume</a></li>
-  <li><a href="/htmx">Playing around with HTMX</a></li>
+  <button
+    id='cv-button'
+    hx-get="/htmx/cv.html"
+    hx-trigger="click"
+    hx-target="#cv-button"
+    hx-swap="outerHTML"
+  >
+    Load Resume
+  </button>
   <li><a href="https://github.com/helle253">Github</a></li>
   <li><a href="https://notes.hellbhoy.net">Notes</a></li>
 </body>
